@@ -19,7 +19,7 @@
 <body>
 
     <!--///////////////////////////////////////////////////////////////////////////////-->
-    <header>
+    <header class="xl:mb-[20%]">
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 
@@ -52,7 +52,7 @@
                     <img src="../assets/images/ultimate11-logo.png" class="mr-3 w-[10rem] xl:cover xl:w-[60%]" alt="Flowbite Logo" />
                 </a>
 
-                <button type="button" class="text-white bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs xl:text-sm px-2 xl:px-5 py-1.5 xl:py-2.5 me-2 mb-6 xl:mb-2 xl:mb-[1.3rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><a href="https://github.com/oussamaamou/Brief-6-FUT-Champions-Web-App-Ultimate-Team" target="_blank">Code Source</a></button>
+                <button type="button" class="text-white bg-blue-800 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs xl:text-sm px-2 xl:px-5 py-1.5 xl:py-2.5 me-2 mb-6 xl:mb-2 xl:mb-[1.3rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><a href="https://github.com/oussamaamou/Brief-6-FUT-Champions-Web-App-Ultimate-Team" target="_blank">Code Source</a></button>
             </div>
         </nav>
     </header>
@@ -62,25 +62,1229 @@
 
 
     <!--///////////////////////////////////////////////////////////////////////////////-->
-    <main>
-        <!-- Conteneur des Cartes des Joueurs-->
-        <div>
+    <main class="grid xl:grid-cols-2">
+        <!-- Premier Conteneur-->
+        <div class="grid grid-rows-2 xl:gap-y-[6.5rem]">
+        
+            <!-- Premiere Composition 4-3-3-->
 
-        </div>
+            <!-- Conteneur des Cartes des Joueurs-->
+            <div class="stade xl:w-[55.75rem] xl:h-[45.313rem] grid grid-rows-4">
+
+                <!-- Conteneur des Attaquants-->
+                <div class="relative">
+                        <!-- Attack Carte -->
+                        <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[5.5rem]">
+                            
+                            <!-- Button d'Ajout -->
+                            
+                            <button type="button" class="attackbtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            
+                            <div class="content">
+                                <!-- Player Card Top -->
+                                <div class="player-card-top">
+                                    <div class="player-master-info">
+                                    <div class="player-rating">
+                                        <span>97</span>
+                                    </div>
+                                    <div class="player-position">
+                                        <span>RW</span>
+                                    </div>
+                                    <div class="player-nation">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                    </div>
+                                    <div class="player-club">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                    </div>
+                                    </div>
+                                    <div class="player-picture">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                            
+                                    </div>
+                                </div>
+                                <!-- Player Card Bottom -->
+                                <div class="player-card-bottom">
+                                    <div class="player-info">
+                                        <!-- Player Name -->
+                                        <div class="player-name">
+                                            <span>MESSI</span>
+                                        </div>
+                                        <!-- Player Features -->
+                                        <div class="player-features">
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">97</span>
+                                                    <span class="player-feature-title">PAC</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">95</span>
+                                                    <span class="player-feature-title">SHO</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">94</span>
+                                                    <span class="player-feature-title">PAS</span>
+                                                </span>
+                                            </div>
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">99</span>
+                                                    <span class="player-feature-title">DRI</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">35</span>
+                                                    <span class="player-feature-title">DEF</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">68</span>
+                                                    <span class="player-feature-title">PHY</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case de Position-->
+                                <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    ST
+                                </div>
+
+                            </div>
+                            
+                            
+                        </div>
+
+
+                        <!-- Attack Carte -->
+                        <div class="fut-player-card absolute cursor-pointer xl:bottom-[8.5rem] xl:left-[22rem]">
+                            
+                            <!-- Button d'Ajout -->
+                            
+                            <button type="button" class="attackbtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            
+                            <div class="content">
+                                <!-- Player Card Top -->
+                                <div class="player-card-top">
+                                    <div class="player-master-info">
+                                    <div class="player-rating">
+                                        <span>97</span>
+                                    </div>
+                                    <div class="player-position">
+                                        <span>RW</span>
+                                    </div>
+                                    <div class="player-nation">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                    </div>
+                                    <div class="player-club">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                    </div>
+                                    </div>
+                                    <div class="player-picture">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                            
+                                    </div>
+                                </div>
+                                <!-- Player Card Bottom -->
+                                <div class="player-card-bottom">
+                                    <div class="player-info">
+                                        <!-- Player Name -->
+                                        <div class="player-name">
+                                            <span>MESSI</span>
+                                        </div>
+                                        <!-- Player Features -->
+                                        <div class="player-features">
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">97</span>
+                                                    <span class="player-feature-title">PAC</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">95</span>
+                                                    <span class="player-feature-title">SHO</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">94</span>
+                                                    <span class="player-feature-title">PAS</span>
+                                                </span>
+                                            </div>
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">99</span>
+                                                    <span class="player-feature-title">DRI</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">35</span>
+                                                    <span class="player-feature-title">DEF</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">68</span>
+                                                    <span class="player-feature-title">PHY</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case de Position-->
+                                <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    ST
+                                </div>
+
+                            </div>
+                            
+                            
+                        </div>
+
+
+
+                        <!-- Attack Carte -->
+                        <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[39rem]">
+                            
+                            <!-- Button d'Ajout -->
+                            
+                            <button type="button" class="attackbtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            
+                            <div class="content">
+                                <!-- Player Card Top -->
+                                <div class="player-card-top">
+                                    <div class="player-master-info">
+                                    <div class="player-rating">
+                                        <span>97</span>
+                                    </div>
+                                    <div class="player-position">
+                                        <span>RW</span>
+                                    </div>
+                                    <div class="player-nation">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                    </div>
+                                    <div class="player-club">
+                                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                    </div>
+                                    </div>
+                                    <div class="player-picture">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                            
+                                    </div>
+                                </div>
+                                <!-- Player Card Bottom -->
+                                <div class="player-card-bottom">
+                                    <div class="player-info">
+                                        <!-- Player Name -->
+                                        <div class="player-name">
+                                            <span>MESSI</span>
+                                        </div>
+                                        <!-- Player Features -->
+                                        <div class="player-features">
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">97</span>
+                                                    <span class="player-feature-title">PAC</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">95</span>
+                                                    <span class="player-feature-title">SHO</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">94</span>
+                                                    <span class="player-feature-title">PAS</span>
+                                                </span>
+                                            </div>
+                                            <div class="player-features-col">
+                                                <span>
+                                                    <span class="player-feature-value">99</span>
+                                                    <span class="player-feature-title">DRI</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">35</span>
+                                                    <span class="player-feature-title">DEF</span>
+                                                </span>
+                                                <span>
+                                                    <span class="player-feature-value">68</span>
+                                                    <span class="player-feature-title">PHY</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case de Position-->
+                                <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    ST
+                                </div>
+
+                            </div>
+                            
+                            
+                        </div>
+
+
+
+                        
+
+
+                    
+
+
+                    
+
+                    
+                    
+                </div>
+
+                <!-- Conteneur des Milieux-->
+                <div class="relative">
+
+
+                    <h2 id="nameteam" class="absolute xl:text-4xl xl:font-bold text-yellow-600 xl:left-[48rem] xl:bottom-[8rem] transform hover:scale-105 cursor-pointer">Real Madrid</h2>
+
+                    <!-- Milieu Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[2rem] xl:left-[9.5rem]">
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                ML
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Milieu Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[2rem] xl:left-[35rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="milieubtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                ML
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Milieu Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[-2rem] xl:left-[22.5rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="milieubtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                ML
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                    
 
 
 
 
-        <!-- Conteneur du Formulaire-->
-        <div>
+                </div>
+
+                <!-- Conteneur des Defenseurs-->
+                <div class="relative">
+
+                    <!-- Defence Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[-1rem] xl:left-[14rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="defencebtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                DF
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Defence Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[-1rem] xl:left-[30.5rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="defencebtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                DF
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Defence Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[2rem] xl:left-[42.5rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="defencebtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                DF
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Defence Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[2rem] xl:right-[42.5rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="defencebtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                DF
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+
+                <!-- Conteneur du Gardien-->
+                <div  class="relative">
+
+                    <!-- Gardien Carte -->
+                    <div class="fut-player-card absolute cursor-pointer xl:bottom-[4rem] xl:left-[22.5rem]">
+                            
+                        <!-- Button d'Ajout -->
+                        
+                        <button type="button" class="gardienbtn hidden text-stone-900 xl:ml-[4.62rem] xl:mt-[5.5rem] bg-yellow-500 hover:bg-yellow-800 font-medium rounded-full text-sm xl:text-lg p-2.5 text-center inline-flex items-center me-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        
+                        <div class="content">
+                            <!-- Player Card Top -->
+                            <div class="player-card-top">
+                                <div class="player-master-info">
+                                <div class="player-rating">
+                                    <span>97</span>
+                                </div>
+                                <div class="player-position">
+                                    <span>RW</span>
+                                </div>
+                                <div class="player-nation">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina" draggable="false">
+                                </div>
+                                <div class="player-club">
+                                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona" draggable="false">
+                                </div>
+                                </div>
+                                <div class="player-picture">
+                                <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi" draggable="false">
+                        
+                                </div>
+                            </div>
+                            <!-- Player Card Bottom -->
+                            <div class="player-card-bottom">
+                                <div class="player-info">
+                                    <!-- Player Name -->
+                                    <div class="player-name">
+                                        <span>MESSI</span>
+                                    </div>
+                                    <!-- Player Features -->
+                                    <div class="player-features">
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">97</span>
+                                                <span class="player-feature-title">PAC</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">95</span>
+                                                <span class="player-feature-title">SHO</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">94</span>
+                                                <span class="player-feature-title">PAS</span>
+                                            </span>
+                                        </div>
+                                        <div class="player-features-col">
+                                            <span>
+                                                <span class="player-feature-value">99</span>
+                                                <span class="player-feature-title">DRI</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">35</span>
+                                                <span class="player-feature-title">DEF</span>
+                                            </span>
+                                            <span>
+                                                <span class="player-feature-value">68</span>
+                                                <span class="player-feature-title">PHY</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Case de Position-->
+                            <div class="xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-600 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                GK
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+
+            
+
+            <!-- Conteneur des Changements-->
+            <div class="xl:h-[10.5rem] flex relative">
+
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem]">
+                            
+                    <div class="content">
+                        
+                    </div>
+                </div>
+
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[10rem]">
+                            
+                   
+                    <div class="content">
+                        
+                    </div>
+                </div>
+
+
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[20rem]">
+                            
+                    <div class="content">
+                        
+
+                    </div>
+                </div>
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[30rem]">
+                            
+                    
+                    <div class="content">
+                        
+
+                    </div>
+                </div>
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[40rem]">
+                            
+                    
+                    <div class="content">
+                        
+
+                    </div>
+                </div>
+
+
+
+                <!-- Attack Carte -->
+                <div class="fut-player-card absolute cursor-pointer xl:bottom-[5.5rem] xl:left-[50rem]">
+                            
+                   
+                    <div class="content">
+
+                    </div>
+                </div>
+            
+            
+            
+            
+            </div> 
             
         </div>
 
 
-        <!-- Conteneur des Changements-->
-        <div>
-        
+
+
+        <!-- Conteneur des Formulaires-->
+        <div class="xl:pl-[12rem]">
+
+            <form id="cpstionform" class="bg-white rounded-2xl xl:py-4 xl:pl-[4rem] xl:mb-[4rem] xl:w-full xl:max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                        Nom d'Equipe
+                        </label>
+                        <input class="appearance-none block w-full bg-blue-200 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-blue-600" id="teamname" type="text" placeholder="Ex: Chelsea">
+                    </div>
+
+                    <div class="w-full xl:ml-[0.5rem] md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                            Composition
+                        </label>
+                        <div class="relative">
+                            <select class="block appearance-none w-full xl:w-[9rem] bg-blue-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                            <option>4-3-3</option>
+                            <option>4-4-2</option>
+                            <option>4-2-4</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <button type="submit" class="text-white bg-blue-800 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700">Ajouter</button>
+                    </div>
+
+                    
+                </div>
+            </form>
+
+
+
+
+
+
+
+
+
+            <form class="bg-white rounded-2xl xl:py-4 xl:pl-[4rem] xl:w-full xl:max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                        Nom du Joueur
+                        </label>
+                        <input class="appearance-none block w-full bg-blue-200 text-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-blue-600" id="grid-first-name" type="text" placeholder="Ex: Zidane">
+                    </div>
+
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            OVERALL
+                        </label>
+                        <input class="appearance-none block xl:w-[4.5rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="OVRL">    
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Vitesse
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="PAC">
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Tir 
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="SHO">
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Passes
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="PAS">
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Dribbles
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="DRI">
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Défense 
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="DEF">
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                            Physique 
+                        </label>
+                        <input class="appearance-none block xl:w-[4.2rem] bg-blue-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-600 focus:border-gray-500" id="grid-zip" type="text" placeholder="PHY">
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-2">
+                  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                        Position
+                      </label>
+                      <div class="relative">
+                        <select id="slctpstion" class="block appearance-none w-full xl:w-[9rem] bg-blue-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                          <option value="attack">Attack</option>
+                          <option value="milieu">Milieu</option>
+                          <option value="defence">Defence</option>
+                          <option value="gardien">Gardien</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="w-full xl:ml-[2rem] md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                      Attack
+                    </label>
+                    <div class="relative">
+                      <select id="slctatck" class="block appearance-none w-full xl:w-[9rem] bg-blue-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <option value="lw">LW</option>
+                        <option value="st">ST</option>
+                        <option value="rw">RW</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hidden w-full xl:ml-[2rem] md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                      Defence
+                    </label>
+                    <div class="relative">
+                      <select id="slctdfnc" class="block appearance-none w-full xl:w-[9rem] bg-blue-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <option value="lb">LB</option>
+                        <option value="cb">CB</option>
+                        <option value="rb">RB</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hidden w-full xl:ml-[2rem] md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                      Milieu
+                    </label>
+                    <div class="relative">
+                      <select id="slctmlieu" class="block appearance-none w-full xl:w-[9rem] bg-blue-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <option value="lm">LM</option>
+                        <option value="cdm">CDM</option>
+                        <option value="rm">RM</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </form>
+
+
         </div>
+
+
+        
 
     </main>
 
