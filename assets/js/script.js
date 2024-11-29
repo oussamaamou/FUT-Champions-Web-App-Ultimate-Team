@@ -12,9 +12,8 @@ let id = 0;
 
 prform.addEventListener('submit', (e) => {
     e.preventDefault();
-
     nameteam.textContent = teamname.value;
-
+    clubinformations();
    
 
 });
@@ -23,6 +22,19 @@ sdform.addEventListener('submit', (e) => {
     e.preventDefault();
     placerjoueurs();
     stockerdata();
+    plyrnme.value = '';
+    ovrlnte.value = '';
+    slctpstion.value = '';
+    plyrpctr.value = ''; 
+    plyrflag.value = '';
+    teamlogo.value = '';
+    vtss.value = ''; 
+    tir.value = ''; 
+    pass.value = '';  
+    drbl.value = ''; 
+    dfnc.value = '';  
+    phsq.value = ''; 
+
     
 
 
@@ -162,6 +174,7 @@ function placerjoueurs() {
 
 /** Stocker Data */
 let plyrsdata = JSON.parse(localStorage.getItem('players')) || [];
+let clubdata = JSON.parse(localStorage.getItem('club')) || [];
 
 function stockerdata(){
 
@@ -181,9 +194,24 @@ function stockerdata(){
         cartid: id
     };
 
+    
     plyrsdata.push(player);
     localStorage.setItem('players', JSON.stringify(plyrsdata));
     placerjoueurs();
+
+};
+
+function clubinformations(){
+
+    let club = {
+
+        clubnom: teamname.value,
+        clubfrmtion:slctfrmtion.value
+
+    };
+    
+    clubdata.push(club);
+    localStorage.setItem('clubs', JSON.stringify(clubdata));
 
 };
 
@@ -261,6 +289,7 @@ function selectImage(imageSrc, targetInputId) {
 getimages();
 placerjoueurs();
 
+console.log(plyrsdata);
 
 
     
