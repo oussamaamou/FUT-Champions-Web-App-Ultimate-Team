@@ -33,7 +33,23 @@ sdform.addEventListener('submit', (e) => {
     pass.value = '';  
     drbl.value = ''; 
     dfnc.value = '';  
-    phsq.value = ''; 
+    phsq.value = '';
+
+    plyrnme.disabled = false;
+    ovrlnte.disabled = false;
+    plyrpctr.disabled = false;
+    plyrflag.disabled = false;
+    teamlogo.disabled = false;
+    vtss.disabled = false;
+    tir.disabled = false;
+    pass.disabled = false;
+    drbl.disabled = false;
+    dfnc.disabled = false;
+    phsq.disabled = false;
+
+    allcrsl.forEach(element => {
+        element.classList.remove("hidden");
+    });
 
     
 
@@ -98,10 +114,27 @@ function placerjoueurs() {
 
     
         plyrsdata.forEach((joueur, index) => {
+
+            const gksts = joueur.position === 'gk';
+            const stats = {
+
+                vss: gksts? "DIV" : "PAC",
+                trr: gksts? "HAN" : "SHO",
+                pss: gksts? "KIC" : "PAS",
+                drb: gksts? "REF" : "DRI",
+                dfc: gksts? "SPE" : "DEF",
+                phq: gksts? "POS" : "PHY"
+
+            }
+            
             let playerHTML = `
 
                 <div  class="inline absolute xl:left-[3.35rem] xl:top-[-0.20rem]">
-                    <i onclick="supprimerjoueur(${index})" class="fa-solid fa-trash hover:text-yellow-500 cursor-pointer"></i>
+                    <i onclick ="supprimerjoueur(${index})" class="fa-solid fa-trash hover:text-yellow-500 cursor-pointer"></i>
+                </div>
+                
+                <div  class="inline absolute xl:left-[4.48rem] xl:top-[-0.22rem]">
+                    <i onclick ="changerposition(${index})" class="fa-solid fa-arrow-right-arrow-left hover:text-yellow-500 cursor-pointer"></i>
                 </div>
 
                 <div class="player-card-top">
@@ -132,29 +165,29 @@ function placerjoueurs() {
                             <div class="player-features-col">
                                 <span>
                                     <span class="player-feature-value">${joueur.pac}</span>
-                                    <span class="player-feature-title">PAC</span>
+                                    <span class="player-feature-title">${stats.vss}</span>
                                 </span>
                                 <span>
                                     <span class="player-feature-value">${joueur.sho}</span>
-                                    <span class="player-feature-title">SHO</span>
+                                    <span class="player-feature-title">${stats.trr}</span>
                                 </span>
                                 <span>
                                     <span class="player-feature-value">${joueur.pas}</span>
-                                    <span class="player-feature-title">PAS</span>
+                                    <span class="player-feature-title">${stats.pss}</span>
                                 </span>
                             </div>
                             <div class="player-features-col">
                                 <span>
                                     <span class="player-feature-value">${joueur.dri}</span>
-                                    <span class="player-feature-title">DRI</span>
+                                    <span class="player-feature-title">${stats.drb}</span>
                                 </span>
                                 <span>
                                     <span class="player-feature-value">${joueur.def}</span>
-                                    <span class="player-feature-title">DEF</span>
+                                    <span class="player-feature-title">${stats.dfc}</span>
                                 </span>
                                 <span>
                                     <span class="player-feature-value">${joueur.phy}</span>
-                                    <span class="player-feature-title">PHY</span>
+                                    <span class="player-feature-title">${stats.phq}</span>
                                 </span>
                             </div>
                         </div>
@@ -199,6 +232,7 @@ function placerjoueurs() {
                 case 'gk':
                     document.getElementById('gk').innerHTML = playerHTML;
                     break;
+
                 case 'sub1':
                     document.getElementById('sub1').innerHTML = playerHTML;
                     break;
@@ -220,6 +254,7 @@ function placerjoueurs() {
                 case 'sub6':
                     document.getElementById('sub6').innerHTML = playerHTML;
                     break;
+
                 default:
                     break;
             }
@@ -229,9 +264,75 @@ function placerjoueurs() {
 }
 
 
-function supprimerjoueur(i){
+function changerlesstats(){
 
-    plyrsdata.splice(i,1);
+    if(slctpstion.value === 'gk'){
+        document.getElementById('vtstxt').textContent = "Plongée ";
+        document.getElementById('tirtxt').textContent = "Manutention";
+        document.getElementById('psstxt').textContent = "Jeu au pied";
+        document.getElementById('drltxt').textContent = "Réflexes";
+        document.getElementById('dfctxt').textContent = "Vitesse";
+        document.getElementById('phytxt').textContent = "Positionnement";
+
+    }
+    else{
+        document.getElementById('vtstxt').textContent = "Vitesse";
+        document.getElementById('tirtxt').textContent = "Tir";
+        document.getElementById('psstxt').textContent = "Passes";
+        document.getElementById('drltxt').textContent = "Dribbles";
+        document.getElementById('dfctxt').textContent = "Défense";
+        document.getElementById('phytxt').textContent = "Physique";
+    }
+    
+
+}
+                    
+
+
+
+let allcrsl = document.querySelectorAll(" .crsslapi");
+
+function changerposition(i){
+
+    plyrnme.value = plyrsdata[i].name  ,
+    ovrlnte.value = plyrsdata[i].note ,
+    slctpstion.value = plyrsdata[i].position ,
+    plyrpctr.value = plyrsdata[i].photo  ,
+    plyrflag.value = plyrsdata[i].flag ,
+    teamlogo.value = plyrsdata[i].logo ,
+    vtss.value = plyrsdata[i].pac  ,
+    tir.value = plyrsdata[i].sho  ,
+    pass.value = plyrsdata[i].pas   ,
+    drbl.value = plyrsdata[i].dri  ,
+    dfnc.value = plyrsdata[i].def   ,
+    phsq.value = plyrsdata[i].phy  
+
+    plyrnme.disabled = true;
+    ovrlnte.disabled = true;
+    plyrpctr.disabled = true;
+    plyrflag.disabled = true;
+    teamlogo.disabled = true;
+    vtss.disabled = true;
+    tir.disabled = true;
+    pass.disabled = true;
+    drbl.disabled = true;
+    dfnc.disabled = true;
+    phsq.disabled = true;
+
+    allcrsl.forEach(element => {
+        element.classList.add("hidden");
+    });
+
+    
+
+    placerjoueurs();
+
+}
+
+
+function supprimerjoueur(index){
+
+    plyrsdata.splice(index,1);
     localStorage.setItem('players', JSON.stringify(plyrsdata));
     placerjoueurs();
     
@@ -326,6 +427,7 @@ function selectImage(imageSrc, targetInputId) {
 
 
 getimages();
+changerlesstats();
 placerjoueurs();
 
 console.log(plyrsdata);
