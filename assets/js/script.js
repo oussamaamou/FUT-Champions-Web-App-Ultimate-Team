@@ -7,7 +7,7 @@ const slctfrmtion = document.getElementById("slctfrmtion");
 const prform = document.getElementById("cpstionform");
 const sdform = document.getElementById("plyrsform");
 
-let id = 0;
+
 
 
 prform.addEventListener('submit', (e) => {
@@ -40,7 +40,41 @@ sdform.addEventListener('submit', (e) => {
 
 });
 
+
+/** Stocker Data */
+let plyrsdata = JSON.parse(localStorage.getItem('players')) || [];
+let clubdata = JSON.parse(localStorage.getItem('club')) || [];
+
+function stockerdata(){
+
+    let player = {
+        name: plyrnme.value  ,
+        note:  ovrlnte.value ,
+        position: slctpstion.value ,
+        photo: plyrpctr.value  ,
+        flag: plyrflag.value ,
+        logo:  teamlogo.value ,
+        pac: vtss.value  ,
+        sho: tir.value  ,
+        pas: pass.value   ,
+        dri: drbl.value  ,
+        def: dfnc.value   ,
+        phy: phsq.value  ,
+        cartid: id
+    };
+
+    
+    plyrsdata.push(player);
+    id++;
+    localStorage.setItem('players', JSON.stringify(plyrsdata));
+    placerjoueurs();
+
+};
+
+
+
 const slctpstion = document.getElementById("slctpstion");
+let id = 0;
 
 function placerjoueurs() {
 
@@ -55,10 +89,21 @@ function placerjoueurs() {
     document.getElementById('cbr').innerHTML = '';
     document.getElementById('cbl').innerHTML = '';
     document.getElementById('gk').innerHTML = '';
+    document.getElementById('sub1').innerHTML = '';
+    document.getElementById('sub2').innerHTML = '';
+    document.getElementById('sub3').innerHTML = '';
+    document.getElementById('sub4').innerHTML = '';
+    document.getElementById('sub5').innerHTML = '';
+    document.getElementById('sub6').innerHTML = '';
 
     
-        plyrsdata.forEach(joueur => {
+        plyrsdata.forEach((joueur, index) => {
             let playerHTML = `
+
+                <div  class="inline absolute xl:left-[3.35rem] xl:top-[-0.20rem]">
+                    <i onclick="supprimerjoueur(${index})" class="fa-solid fa-trash hover:text-yellow-500 cursor-pointer"></i>
+                </div>
+
                 <div class="player-card-top">
                     <div class="player-master-info">
                         <div class="player-rating">
@@ -115,52 +160,65 @@ function placerjoueurs() {
                         </div>
                     </div>
                 </div>
+                <div class="uppercase xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-500 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    ${joueur.position}
+                </div>
             `;
 
             switch(joueur.position) {
                 case 'st':
                     document.getElementById('st').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'lw':
                     document.getElementById('lw').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'rw':
                     document.getElementById('rw').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'cdm':
                     document.getElementById('cdm').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'lm':
                     document.getElementById('lm').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'rm':
                     document.getElementById('rm').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'lb':
                     document.getElementById('lb').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'rb':
                     document.getElementById('rb').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'cbr':
                     document.getElementById('cbr').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'cbl':
                     document.getElementById('cbl').innerHTML = playerHTML;
-                    id++;
                     break;
                 case 'gk':
                     document.getElementById('gk').innerHTML = playerHTML;
-                    id++;
+                    break;
+                case 'sub1':
+                    document.getElementById('sub1').innerHTML = playerHTML;
+                    break;
+                case 'sub2':
+                    document.getElementById('sub2').innerHTML = playerHTML;
+                    break;
+                    
+                case 'sub3':
+                    document.getElementById('sub3').innerHTML = playerHTML;
+                    break;
+
+                case 'sub4':
+                    document.getElementById('sub4').innerHTML = playerHTML;
+                    break;
+                case 'sub5':
+                    document.getElementById('sub5').innerHTML = playerHTML;
+                    break;
+                    
+                case 'sub6':
+                    document.getElementById('sub6').innerHTML = playerHTML;
                     break;
                 default:
                     break;
@@ -171,35 +229,16 @@ function placerjoueurs() {
 }
 
 
+function supprimerjoueur(i){
 
-/** Stocker Data */
-let plyrsdata = JSON.parse(localStorage.getItem('players')) || [];
-let clubdata = JSON.parse(localStorage.getItem('club')) || [];
-
-function stockerdata(){
-
-    let player = {
-        name: plyrnme.value  ,
-        note:  ovrlnte.value ,
-        position: slctpstion.value ,
-        photo: plyrpctr.value  ,
-        flag: plyrflag.value ,
-        logo:  teamlogo.value ,
-        pac: vtss.value  ,
-        sho: tir.value  ,
-        pas: pass.value   ,
-        dri: drbl.value  ,
-        def: dfnc.value   ,
-        phy: phsq.value  ,
-        cartid: id
-    };
-
-    
-    plyrsdata.push(player);
+    plyrsdata.splice(i,1);
     localStorage.setItem('players', JSON.stringify(plyrsdata));
     placerjoueurs();
+    
 
-};
+}
+
+
 
 function clubinformations(){
 
