@@ -1,5 +1,5 @@
 
-/** Composition Form */
+/** Declaration des Variables */
 const teamname = document.getElementById("teamname");
 const nameteam = document.getElementById("nameteam");
 const slctfrmtion = document.getElementById("slctfrmtion");
@@ -9,7 +9,7 @@ const sdform = document.getElementById("plyrsform");
 
 
 
-
+/** L'Ajout du Nom d'Equipe */
 prform.addEventListener('submit', (e) => {
     e.preventDefault();
     nameteam.textContent = teamname.value;
@@ -17,6 +17,8 @@ prform.addEventListener('submit', (e) => {
 
 });
 
+
+/** Formulaire de Creation des Joueurs */
 sdform.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -35,12 +37,21 @@ sdform.addEventListener('submit', (e) => {
     const dfnc = document.getElementById('dfnc');
     const phsq = document.getElementById('phsq');
 
+    const nmbrinpts = [ovrlnte, vtss, tir, pass, drbl, dfnc, phsq];
+
+    for (let input of nmbrinpts) {
+        let value = input.value;
+        if (value < 0 || value > 100) {
+            alert1.style.opacity = "1";
+            alert1.innerText = "Les valeurs doivent être comprises entre 0 et 100 !";
+            input.focus();
+            return;
+        }
+    }
+
     if ( !plyrnme.value || !ovrlnte.value || !slctpstion.value || !plyrpctr.value || !plyrflag.value || !teamlogo.value || !vtss.value || !tir.value || !pass.value || !drbl.value || !dfnc.value || !phsq.value ){
         alert1.style.opacity = "1";
     }
-    
-    
-    
     
     else{
         placerjoueurs();
@@ -87,7 +98,6 @@ sdform.addEventListener('submit', (e) => {
 /** Stocker Data */
 let plyrsdata = JSON.parse(localStorage.getItem('players')) || [];
 
-
 function stockerdata(){
 
     let player = {
@@ -114,6 +124,8 @@ function stockerdata(){
 
 };
 
+
+/** Placer les Joueurs */
 const slctpstion = document.getElementById("slctpstion");
 let id = 0;
 
@@ -288,7 +300,7 @@ function placerjoueurs() {
         
 }
 
-
+/** Changer les Stats */
 function changerlesstats(){
 
     if(slctpstion.value === 'gk'){
@@ -316,6 +328,7 @@ function changerlesstats(){
 let plyrsbtn = document.getElementById("plyrsbtn");
 let allcrsl = document.querySelectorAll(" .crsslapi");
 
+/** Chnager la position */
 function changerposition(i){
 
     const nvlpstion = slctpstion.value;
@@ -361,6 +374,7 @@ function changerposition(i){
 }
 
 
+/** Supprimer un Joueur */
 function supprimerjoueur(index){
 
     plyrsdata.splice(index,1);
@@ -374,7 +388,6 @@ function supprimerjoueur(index){
 
 
 /** Consommation de l'API */
-
 let url = "https://oussamaamou.github.io/Brief-6-API/";
 
 let pctrcrsl = document.getElementById("pctrcrsl");
@@ -412,6 +425,8 @@ async function getimages() {
  
 
 
+
+/** Carousel des Images */
 let currentSlide = {
     pctrcrsl: 0,
     logocrsl: 0,
@@ -436,17 +451,20 @@ const moveSlide = (direction, carouselId) => {
 };
 
 
-
+/** Source des images */
 function selectImage(imageSrc, targetInputId) {
     const inputElement = document.getElementById(targetInputId);
     inputElement.value = imageSrc;
 }
 
 
+/** Affichage des fonctions */
 getimages();
 changerlesstats();
 placerjoueurs();
 
+
+/** Verification des Donnes */
 console.log(plyrsdata);
 
 

@@ -47,12 +47,9 @@
     </header>
 
     
-
-
-
     <!--///////////////////////////////////////////////////////////////////////////////-->
     <main class="grid grid-rows-2 xl:grid-cols-2">
-        <!-- Premier Conteneur-->
+        <!-- Conteneur de Composition-->
         <div class="grid grid-rows-2 gap-y-[6.5rem] mt-[-25rem] sm:mt-0 ml-[-17rem] md:ml-[-4.5rem] xl:ml-0 scale-[0.35] md:scale-[0.7] xl:scale-[0.9]">
         
             <!-- Premiere Composition 4-3-3-->
@@ -305,6 +302,7 @@
         <!-- Conteneur des Formulaires-->
         <div class="pl-[14rem] xl:pl-[14rem] mt-[-106rem] md:mt-[-70rem] ml-[-16rem] md:ml-0 xl:ml-0 xl:mt-[-22rem] scale-[0.32] md:scale-[0.66] md:pl-[8.5rem] xl:scale-[0.85]">
 
+            <!-- Nom d'Equipe-->
             <h2 class="mb-2 text-3xl font-extrabold leading-none tracking-tight text-white">Creer Votre Equipe</h2>
 
             <form id="cpstionform" class="bg-gradient-to-b from-stone-700 to-yellow-200 rounded-2xl py-4 pl-[4rem] mb-[2rem] w-full max-w-lg">
@@ -339,12 +337,8 @@
             </form>
 
 
-
-
-
-
-
-            <h2 class="mb-2 text-3xl font-extrabold leading-none tracking-tight text-white">Personnaliser Votre Joueurs</h2>
+            <!-- Informations du Joueur-->
+            <h2 class="mb-2 text-3xl font-extrabold leading-none tracking-tight text-white">Personnaliser Votre Joueur</h2>
 
             <form id="plyrsform" class="bg-gradient-to-b from-stone-800 to-yellow-200 rounded-2xl py-4 pl-[4rem] w-full max-w-lg">
                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -488,17 +482,14 @@
                       <div class="relative">
                         <select onchange="changerlesstats()" id="slctpstion" class="block appearance-none w-[9rem] bg-white border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none">
                             <option value=""></option>
-                            <option class="stpxn hidden" value="stl">ST L</option>
-                            <option class="stpxn hidden" value="str">ST R</option>
                             <option value="lw">LW</option>
                             <option value="st">ST</option>
                             <option value="rw">RW</option>
                             <option value="lb">LB</option>
-                            <option value="cbl">CB L</option>
-                            <option value="cbr">CB R</option>
+                            <option value="cbl">CB</option>
+                            <option value="cbr">CB</option>
                             <option value="rb">RB</option>
                             <option value="lm">LM</option>
-                            <option id="cam" class="hidden" value="cam">CAM</option>
                             <option value="cdm">CDM</option>
                             <option value="rm">RM</option>
                             <option value="gk">GK</option>
@@ -526,7 +517,8 @@
 
                 </div>
 
-                <p id="alert" class="text-red-500 font-medium opacity-0"> Veuillez remplir tous les champs</p>
+                <!-- Alert 1-->
+                <p id="alert" class="text-red-500 font-medium opacity-0"> Veuillez remplir tous les champs !!</p>
 
             </form>
 
@@ -539,10 +531,7 @@
     </main>
 
 
-
     <!--///////////////////////////////////////////////////////////////////////////////-->
-    
-
     <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4 xl:mt-[-120rem]">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
