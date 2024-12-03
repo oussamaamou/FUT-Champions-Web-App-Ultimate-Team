@@ -19,38 +19,64 @@ prform.addEventListener('submit', (e) => {
 
 sdform.addEventListener('submit', (e) => {
     e.preventDefault();
-    placerjoueurs();
-    stockerdata();
-    plyrnme.value = '';
-    ovrlnte.value = '';
-    slctpstion.value = '';
-    plyrpctr.value = ''; 
-    plyrflag.value = '';
-    teamlogo.value = '';
-    vtss.value = ''; 
-    tir.value = ''; 
-    pass.value = '';  
-    drbl.value = ''; 
-    dfnc.value = '';  
-    phsq.value = '';
 
-    plyrnme.disabled = false;
-    ovrlnte.disabled = false;
-    plyrpctr.disabled = false;
-    plyrflag.disabled = false;
-    teamlogo.disabled = false;
-    vtss.disabled = false;
-    tir.disabled = false;
-    pass.disabled = false;
-    drbl.disabled = false;
-    dfnc.disabled = false;
-    phsq.disabled = false;
+    const alert1 = document.getElementById("alert");
 
-    plyrsbtn.innerHTML = "Ajouter";
+    const plyrnme = document.getElementById('plyrnme');
+    const ovrlnte = document.getElementById('ovrlnte');
+    const slctpstion = document.getElementById('slctpstion');
+    const plyrpctr = document.getElementById('plyrpctr');
+    const plyrflag = document.getElementById('plyrflag');
+    const teamlogo = document.getElementById('teamlogo');
+    const vtss = document.getElementById('vtss');
+    const tir = document.getElementById('tir');
+    const pass = document.getElementById('pass');
+    const drbl = document.getElementById('drbl');
+    const dfnc = document.getElementById('dfnc');
+    const phsq = document.getElementById('phsq');
 
-    allcrsl.forEach(element => {
-        element.classList.remove("hidden");
-    });
+    if ( !plyrnme.value || !ovrlnte.value || !slctpstion.value || !plyrpctr.value || !plyrflag.value || !teamlogo.value || !vtss.value || !tir.value || !pass.value || !drbl.value || !dfnc.value || !phsq.value ){
+        alert1.style.opacity = "1";
+    }
+    
+    
+    
+    
+    else{
+        placerjoueurs();
+        stockerdata();
+        plyrnme.value = '';
+        ovrlnte.value = '';
+        slctpstion.value = '';
+        plyrpctr.value = ''; 
+        plyrflag.value = '';
+        teamlogo.value = '';
+        vtss.value = ''; 
+        tir.value = ''; 
+        pass.value = '';  
+        drbl.value = ''; 
+        dfnc.value = '';  
+        phsq.value = '';
+
+        plyrnme.disabled = false;
+        ovrlnte.disabled = false;
+        plyrpctr.disabled = false;
+        plyrflag.disabled = false;
+        teamlogo.disabled = false;
+        vtss.disabled = false;
+        tir.disabled = false;
+        pass.disabled = false;
+        drbl.disabled = false;
+        dfnc.disabled = false;
+        phsq.disabled = false;
+
+        plyrsbtn.innerHTML = "Ajouter";
+        alert1.style.opacity = "0";
+
+        allcrsl.forEach(element => {
+            element.classList.remove("hidden");
+        });
+    }
 
     
 
