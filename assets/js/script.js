@@ -129,11 +129,11 @@ function placerjoueurs() {
             
             let playerHTML = `
 
-                <div  class="inline absolute xl:left-[3.35rem] xl:top-[-0.20rem]">
+                <div  class="inline absolute left-[3.35rem] top-[-0.20rem]">
                     <i onclick ="supprimerjoueur(${index})" class="fa-solid fa-trash hover:text-yellow-500 cursor-pointer"></i>
                 </div>
                 
-                <div  class="inline absolute xl:left-[4.48rem] xl:top-[-0.22rem]">
+                <div  class="inline absolute left-[4.48rem] top-[-0.22rem]">
                     <i onclick ="changerposition(${index})" class="fa-solid fa-arrow-right-arrow-left hover:text-yellow-500 cursor-pointer"></i>
                 </div>
 
@@ -193,7 +193,7 @@ function placerjoueurs() {
                         </div>
                     </div>
                 </div>
-                <div class="uppercase xl:w-[3rem] xl:ml-[4.2rem] xl:mt-[1rem] xl:px-3 xl:py-1.5 xl:text-xs xl:font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-500 to-yellow-700 xl:rounded-2xl shadow-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <div class="uppercase w-[3rem] ml-[4.2rem] mt-[1rem] px-3 py-1.5 text-xs font-semibold text-center text-stone-900 bg-gradient-to-b from-yellow-500 to-yellow-700 rounded-2xl shadow-lg hover:bg-yellow-800">
                     ${joueur.position}
                 </div>
             `;
@@ -294,9 +294,14 @@ let allcrsl = document.querySelectorAll(" .crsslapi");
 
 function changerposition(i){
 
+    const nvlpstion = slctpstion.value;
+    plyrsdata[i].position = nvlpstion;
+
+    placerjoueurs();
+
     plyrnme.value = plyrsdata[i].name  ,
     ovrlnte.value = plyrsdata[i].note ,
-    slctpstion.value = plyrsdata[i].position ,
+    slctpstion.value = nvlpstion ,
     plyrpctr.value = plyrsdata[i].photo  ,
     plyrflag.value = plyrsdata[i].flag ,
     teamlogo.value = plyrsdata[i].logo ,
@@ -325,7 +330,7 @@ function changerposition(i){
 
     
 
-    placerjoueurs();
+    
 
 }
 
@@ -378,7 +383,7 @@ async function getimages() {
 
         logocrsl.innerHTML +=`
         
-        <img src="${data.players[i].logo}" alt="Image 1" class="slider-image xl:w-[35px] xl:h-[35px] cursor-pointer" onclick="selectImage('${data.players[i].logo}', 'teamlogo')">
+        <img src="${data.players[i].logo}" alt="Image 1" class="slider-image w-[35px] h-[35px] cursor-pointer" onclick="selectImage('${data.players[i].logo}', 'teamlogo')">
         
         `;
 
