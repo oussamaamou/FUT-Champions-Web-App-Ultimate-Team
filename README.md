@@ -106,7 +106,7 @@ _Administrez et personnalisez votre équipe grâce à des fonctionnalités inter
 ## 🧑‍💻 **Auteur**
 
 - **Nom :** Oussama Amou  
-- 📧 **Email :** amoussdark.com  
+- 📧 **Email :** amoussdark@gmail.com  
 - 🌐 **GitHub :** [Votre GitHub](https://github.com/oussamaamou?tab=repositories)
 - 🌐 **LinkedIn :** [Votre Profil](https://www.linkedin.com/in/oussama-amou-b71151337/) 
 
