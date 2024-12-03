@@ -99,7 +99,7 @@ _Administrez et personnalisez votre équipe grâce à des fonctionnalités inter
 ## 📸 **Aperçu**
 
 ### Interface de gestion
-![Aperçu du terrain](/assets/images/capture-ultimate11)
+![Aperçu du terrain](\assets\images\capture-ultimate11.png)
 
 ---
 
