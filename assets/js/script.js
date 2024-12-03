@@ -13,7 +13,6 @@ const sdform = document.getElementById("plyrsform");
 prform.addEventListener('submit', (e) => {
     e.preventDefault();
     nameteam.textContent = teamname.value;
-    clubinformations();
    
 
 });
@@ -47,6 +46,8 @@ sdform.addEventListener('submit', (e) => {
     dfnc.disabled = false;
     phsq.disabled = false;
 
+    plyrsbtn.innerHTML = "Ajouter";
+
     allcrsl.forEach(element => {
         element.classList.remove("hidden");
     });
@@ -59,7 +60,7 @@ sdform.addEventListener('submit', (e) => {
 
 /** Stocker Data */
 let plyrsdata = JSON.parse(localStorage.getItem('players')) || [];
-let clubdata = JSON.parse(localStorage.getItem('club')) || [];
+
 
 function stockerdata(){
 
@@ -86,8 +87,6 @@ function stockerdata(){
     placerjoueurs();
 
 };
-
-
 
 const slctpstion = document.getElementById("slctpstion");
 let id = 0;
@@ -288,8 +287,7 @@ function changerlesstats(){
 }
                     
 
-
-
+let plyrsbtn = document.getElementById("plyrsbtn");
 let allcrsl = document.querySelectorAll(" .crsslapi");
 
 function changerposition(i){
@@ -324,6 +322,8 @@ function changerposition(i){
     dfnc.disabled = true;
     phsq.disabled = true;
 
+    plyrsbtn.innerHTML = "Modifier";
+
     allcrsl.forEach(element => {
         element.classList.add("hidden");
     });
@@ -345,20 +345,6 @@ function supprimerjoueur(index){
 }
 
 
-
-function clubinformations(){
-
-    let club = {
-
-        clubnom: teamname.value,
-        clubfrmtion:slctfrmtion.value
-
-    };
-    
-    clubdata.push(club);
-    localStorage.setItem('clubs', JSON.stringify(clubdata));
-
-};
 
 
 /** Consommation de l'API */
